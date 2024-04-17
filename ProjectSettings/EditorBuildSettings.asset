@@ -14,5 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/healingScene.unity
     guid: 820d20bfd5e0311478c29ca8a81d431c
+  - enabled: 1
+    path: Assets/Scenes/healingChoiceScene.unity
+    guid: 64ac147cd53e6ce4db3c00cd04ac4bcf
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

@@ -26,6 +26,6 @@ public class LogicScript : MonoBehaviour
     public void gameOver()
     {
         //gameOverScreen.SetActive(true);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(3);
     }
 }
