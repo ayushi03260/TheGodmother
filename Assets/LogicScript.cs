@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEditor.SearchService;
 
 public class LogicScript : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class LogicScript : MonoBehaviour
     }
     public void gameOver()
     {
-        gameOverScreen.SetActive(true);
+        //gameOverScreen.SetActive(true);
+        SceneManager.LoadScene(0);
     }
 }
