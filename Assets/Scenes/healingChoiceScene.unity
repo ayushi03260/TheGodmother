@@ -598,7 +598,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   manaMCamt: 100
   manaOppamt: 100
-  manaMC: {fileID: 0}
+  manaMC: {fileID: 5320130257744132822, guid: b55c366d56787bc41a55c190f2716c67, type: 3}
 --- !u!1 &1191351448
 GameObject:
   m_ObjectHideFlags: 0
