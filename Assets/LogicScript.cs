@@ -8,7 +8,7 @@ using UnityEditor.SearchService;
 
 public class LogicScript : MonoBehaviour
 {
-    public int playerScore = 0;
+    public static int playerScore = 0;
     public TMP_Text scoreText;
     public GameObject gameOverScreen;
 
