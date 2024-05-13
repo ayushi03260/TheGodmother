@@ -27,6 +27,13 @@ public class changeAmt : MonoBehaviour
 
         updateMcText.amount = manaMCamt;
     }
+    public static void subtractAmt(int amount)
+    {
+        manaMCamt += amount;
+        Debug.Log(manaMCamt.ToString());
+
+        updateMcText.amount = manaMCamt;
+    }
     public void oppAmtdamage(int amount)
     {
         oppAmttotal -= amount;

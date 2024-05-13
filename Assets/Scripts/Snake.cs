@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(BoxCollider2D))]
 public class Snake : MonoBehaviour
@@ -128,14 +129,14 @@ public class Snake : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("Obstacle"))
         {
-            ResetState();
+            GameOver();
         }
         else if (other.gameObject.CompareTag("Wall"))
         {
             if (moveThroughWalls) {
                 Traverse(other.transform);
             } else {
-                ResetState();
+                GameOver();
             }
         }
     }
@@ -151,6 +152,10 @@ public class Snake : MonoBehaviour
         }
 
         transform.position = position;
+    }
+    public void GameOver()
+    {
+        SceneManager.LoadScene(4);
     }
 
 }

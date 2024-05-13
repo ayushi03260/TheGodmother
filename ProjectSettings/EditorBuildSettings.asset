@@ -20,5 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/healingChoiceScene.unity
     guid: 64ac147cd53e6ce4db3c00cd04ac4bcf
+  - enabled: 1
+    path: Assets/Scenes/weaponChoiceScene.unity
+    guid: 5ab96dca552fe9c4081a6c828bdc1de7
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
