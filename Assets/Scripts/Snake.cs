@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms.Impl;
 
 [RequireComponent(typeof(BoxCollider2D))]
 public class Snake : MonoBehaviour
@@ -15,6 +16,7 @@ public class Snake : MonoBehaviour
     private List<Transform> segments = new List<Transform>();
     private Vector2Int input;
     private float nextUpdate;
+    public static int snakeScore = 0;
 
     private void Start()
     {
@@ -119,13 +121,7 @@ public class Snake : MonoBehaviour
             Grow();
             Grow();
             Grow();
-            Grow();
-            Grow();
-            Grow();
-            Grow();
-            Grow();
-            Grow();
-            Grow();
+            snakeScore += 1;
         }
         else if (other.gameObject.CompareTag("Obstacle"))
         {
