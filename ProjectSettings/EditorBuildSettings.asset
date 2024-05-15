@@ -8,9 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/fightingScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
-    path: Assets/Scenes/weaponScene.unity
-    guid: 901ab01f658c2ff4b8557602e00bde2d
   - enabled: 1
     path: Assets/Scenes/Snake.unity
     guid: 61f7b0cf9ddaf714cae30ff64e0077a3
@@ -20,5 +17,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/healingChoiceScene.unity
     guid: 64ac147cd53e6ce4db3c00cd04ac4bcf
+  - enabled: 1
+    path: Assets/Scenes/menuScene.unity
+    guid: 066f05c3648dc96479d0e9c0cf5c8133
+  - enabled: 1
+    path: Assets/Scenes/mapMovement.unity
+    guid: 508fd9057e986a74c83f39edd5917e31
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

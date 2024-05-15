@@ -3,7 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Brick
+  - LeftWall
+  - Ceiling
+  - Paddle
+  - Floor
+  - RightWall
+  - Logic
+  - Wall
+  - Food
+  - Obstacle
+  - opp
   layers:
   - Default
   - TransparentFX
