@@ -14,6 +14,8 @@ public class updateMcText : MonoBehaviour
     public static int amount;
 
     public bool updatedAmount = false;
+
+    //public static bool mcAlive = true;
     //int randAmt;
     //public static int oppAmount;
     //public GameManager script = new GameManager();
@@ -21,13 +23,16 @@ public class updateMcText : MonoBehaviour
     void Start()
     {
         mcText.text = "100";
+        //amount = 100;
         //oppText.text = "100";
+        //mcAlive = true;
     }
 
     // Update is called once per frame
     void Update()
     {
         //int mcAmt = script.manaMCamt;
+        Debug.Log(amount);
         if (amount > 0)
         {
             mcText.text = amount.ToString();
@@ -38,10 +43,23 @@ public class updateMcText : MonoBehaviour
                 Invoke("function", 5f);
                 updatedAmount = true;
             }
-
-
         }
-        
+        else if(amount < 1)
+        {
+
+            //GameManager.manaMCamt = 100;
+            //mcAlive = false;
+            amount = 100;
+            SceneManager.LoadScene(5);
+            Debug.Log(amount);
+            Debug.Log(GameManager.manaMCamt);
+        }
+        /*
+        if (!isAlive())
+        {
+            SceneManager.LoadScene(5);
+        }
+        */
         //oppText.text = oppAmount.ToString();
         //Debug.Log(amount.ToString());
     }
@@ -53,8 +71,8 @@ public class updateMcText : MonoBehaviour
 
     void function()
     {
-        int[] oppAmount = new int[] { -5, -10, -15, -20 };
-        int randAmt = oppAmount[Random.Range(0, 3)];
+        int[] oppAmount = new int[] { 0, -5, -10, -15, -20 };
+        int randAmt = oppAmount[Random.Range(0, 1)];
         useText.text = "Opp used " + randAmt.ToString();
         
         Debug.Log(amount);
@@ -63,5 +81,15 @@ public class updateMcText : MonoBehaviour
         //randAmt = 0;
         //mcText.text = amount.ToString();
     }
-
+    /*
+    public static bool isAlive()
+    {
+        if (GameManager.oppAmount < 0)
+        {
+            //manaMCamt = 100;
+            return false;
+        }
+        return true;
+    }
+    */
 }

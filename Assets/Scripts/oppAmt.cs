@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class oppAmt : MonoBehaviour
 {
@@ -25,5 +26,10 @@ public class oppAmt : MonoBehaviour
         //mcText.text = amount.ToString();
         oppText.text = oppAmount.ToString();
         //Debug.Log(amount.ToString());
+        if (oppAmount < 1)
+        {
+            SceneManager.LoadScene(5);
+            //oppAmount = 100;
+        }
     }
 }

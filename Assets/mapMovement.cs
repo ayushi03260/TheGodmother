@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class mapMovement : MonoBehaviour
 {
     public int num;
+    public GameObject oppObject;
 
     // Update is called once per frame
     void Update()
@@ -24,11 +25,24 @@ public class mapMovement : MonoBehaviour
         {
             transform.Translate(Vector2.left * Time.deltaTime * num);
         }
+        /*
+        if(updateMcText.isAlive()==false)
+        {
+            oppObject.gameObject.SetActive(true);
+        }*/
+        if (oppAmt.oppAmount < 1)
+        {
+            /*
+            oppObject.GetComponent<SpriteRenderer>().enabled = false;
+            oppObject.enabled = false;
+            */
+            oppObject.gameObject.SetActive(false);
+
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D opp)
     {
-
         if (opp.gameObject.CompareTag("opp"))
         {
             Debug.Log("hit");

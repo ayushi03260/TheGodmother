@@ -11,6 +11,7 @@ public class changeAmt : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        manaMCamt = GameManager.manaMCamt;
         updateMcText.amount = manaMCamt;
         Debug.Log(manaMCamt);
     }
@@ -26,6 +27,7 @@ public class changeAmt : MonoBehaviour
         Debug.Log(manaMCamt.ToString());
 
         updateMcText.amount = manaMCamt;
+        LogicScript.playerScore = 0;
     }
     public static void subtractAmt(int amount)
     {
@@ -38,11 +40,21 @@ public class changeAmt : MonoBehaviour
     {
         oppAmttotal -= amount;
         oppAmt.oppAmount = oppAmttotal;
+
+        Snake.snakeScore = 0;
     }
     public void check()
     {
         int bscore = LogicScript.playerScore;
     }
-
+    /*public static bool isAlive()
+    {
+        if (manaMCamt < 0)
+        {
+            //manaMCamt = 100;
+            return false;
+        }
+        return true;
+    }*/
     // public int getManaMCamt() { return manaMCamt; }
 }
