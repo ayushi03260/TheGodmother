@@ -452,7 +452,6 @@ GameObject:
   - component: {fileID: 1183279700}
   - component: {fileID: 1183279703}
   - component: {fileID: 1183279704}
-  - component: {fileID: 1183279705}
   - component: {fileID: 1183279706}
   m_Layer: 5
   m_Name: Restoration
@@ -611,22 +610,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff83a1a5da676344eb734f8c36bf857f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1183279705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1183279698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c386fbed4e01b24faf411e14fc0be60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  button1: {fileID: 0}
-  button2: {fileID: 0}
-  button3: {fileID: 0}
-  button4: {fileID: 0}
 --- !u!114 &1183279706
 MonoBehaviour:
   m_ObjectHideFlags: 0
