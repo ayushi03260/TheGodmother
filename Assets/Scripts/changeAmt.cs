@@ -11,7 +11,11 @@ public class changeAmt : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        manaMCamt = GameManager.manaMCamt;
+        if (manaMCamt < 0)
+        {
+            manaMCamt = 100;
+        }
+        
         updateMcText.amount = manaMCamt;
         Debug.Log(manaMCamt);
     }

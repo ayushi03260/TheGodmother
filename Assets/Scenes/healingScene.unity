@@ -338,7 +338,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.45296368, g: 0.51263815, b: 0.8207547, a: 0}
+  m_BackGroundColor: {r: 0.23584908, g: 0.23584908, b: 0.23584908, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -834,7 +834,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3803887304354961441, guid: 46a86efecba1e8649930e02ce3a8757f, type: 3}
+  m_Sprite: {fileID: -1101068510037212773, guid: 86227c9cecd170d4fadfdece54a65fc1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1075,7 +1075,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01422720c9a1cff45a94722409dfc691, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScore: 0
   scoreText: {fileID: 961817248}
   gameOverScreen: {fileID: 1301000254}
 --- !u!4 &1351570356

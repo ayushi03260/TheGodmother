@@ -71,8 +71,8 @@ public class updateMcText : MonoBehaviour
 
     void function()
     {
-        int[] oppAmount = new int[] { 0, -5, -10, -15, -20 };
-        int randAmt = oppAmount[Random.Range(0, 1)];
+        int[] oppAmount = new int[] {-5, -10, -15, -20 };
+        int randAmt = oppAmount[Random.Range(0, 4)];
         useText.text = "Opp used " + randAmt.ToString();
         
         Debug.Log(amount);
